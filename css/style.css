@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #0b213d;
+  color: #fff;
+  display: flex;
+  min-height: 100vh;
+  margin: 10px 150px 10px 150px;
+}
+
+/* Sidebar */
+aside {
+  width: 220px;
+  background: #083156;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+aside h2 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+aside ul {
+  list-style: none;
+}
+aside ul li {
+  padding: 8px;
+  cursor: pointer;
+}
+aside ul li:hover {
+  background: #0d4476;
+  border-radius: 5px;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: #083c6a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: fit-content;
+}
+.logo {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.search {
+  flex: 1;
+  margin: 0 20px 0 890px;
+}
+.search input {
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  height: 550px;
+}
+.banner-main {
+  flex: 3;
+  background-image: url(/images/silenthillBANNER.webp);
+  background-size: cover;
+  border-radius: 10px;
+  min-height: 250px;
+}
+.banner-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.banner-side div:nth-child(1) {
+  background-image: url(/images/Silentt-Hill-F\ 1.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 170px;
+}
+
+.banner-side div:nth-child(2) {
+  background-image: url(/images/images\ banne2.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 170px;
+}
+
+.banner-side div:nth-child(3) {
+  background-image: url(/images/images\ banner3.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 170px;
+}
+
+.banner-side div {
+  background-image: url(/images/Silentt-Hill-F\ 1.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 170px;
+}
+
+/* Grid de juegos */
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.game-card {
+  background: #1c2e4a;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.game-card img {
+  width: 100%;
+  display: block;
+}
+.game-card p {
+  margin-top: 8px;
+  font-size: 1.3em;
+}
+
+/* Paginación */
+.pagination {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Footer */
+/* Footer superior */
+.footer-top {
+  display: flex;
+  background: #0f355d;
+  padding: 15px;
+  justify-content: space-around;
+}
+.footer-top div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-top div:nth-child(1) {
+  background: url(/images/descarga.png);
+   background-size: cover;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+}
+
+.footer-top div:nth-child(2) {
+  background: url(/images/seguro.png);
+   background-size: cover;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+}
+
+.footer-top div:nth-child(3) {
+  background: url(/images/contacto.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+}
+
+
+
+/* Footer inferior */
+.footer-bottom {
+  background: #081c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+.social {
+  display: flex;
+  gap: 15px;
+}
+.social a {
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links li {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
