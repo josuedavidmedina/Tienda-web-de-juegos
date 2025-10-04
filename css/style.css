@@ -83,6 +83,7 @@ header {
   gap: 10px;
   padding: 20px;
   height: 550px;
+  
 }
 
 .banner button{
@@ -105,34 +106,93 @@ header {
   background-size: cover;
   border-radius: 10px;
   min-height: 250px;
+  transition: .5s;
 }
+
+.banner-main:hover{
+  transition: .2s;
+  filter: brightness(50%);
+  
+}
+
+
 .banner-side {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.banner-side div:nth-child(1) {
-  background-image: url(../images/banner1.png);
-  background-repeat: no-repeat;
+
+.banner-side div{
+  background-size: cover;
+   background-repeat: no-repeat;
   border-radius: 10px;
   height: 170px;
+  padding: 10px;
 }
+
+.banner-side div:nth-child(1) {
+  background-image:url(../images/banner1.png);
+
+}
+.banner-side div:nth-child(1) h4,
+.banner-side div:nth-child(2) h4,
+.banner-side div:nth-child(3) h4 {
+  text-align: center;
+  align-content: center;
+  opacity: 0;
+  height: 100%;
+  font-size: 30px;
+  font-weight: 800;
+}
+.banner-side div:nth-child(1):hover h4,
+.banner-side div:nth-child(2):hover h4,
+.banner-side div:nth-child(3):hover h4{
+  opacity: 1;
+  transition: .2s;
+}
+
 
 .banner-side div:nth-child(2) {
-  background-image: url(../images/banne2.png);
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  height: 170px;
+  background-image:url(../images/banne2.png);
+ 
 }
+
 
 .banner-side div:nth-child(3) {
-  background-image: url(../images/banner3.png);
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  height: 170px;
+  background-image:url(../images/banner3.png);
+  
+}
+.banner-side div:nth-child(1):hover,
+.banner-side div:nth-child(2):hover,
+.banner-side div:nth-child(3):hover{
+transition: .2s;
+  filter: brightness(50%);
+  transform: scale(1.05);
 }
 
+
+ /* botones de desplazamiento */
+
+  .btns-desplazamiento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: auto;
+    height: 50px;
+  }
+
+   .btns-desplazamiento div{
+    background-color:#A17C8A;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+  }
+
+    .btns-desplazamiento div:nth-child(4){
+      background-color: #637184;
+    }
 
 
 /* Grid de juegos */
