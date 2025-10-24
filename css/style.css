@@ -97,6 +97,13 @@ header {
   border-radius: 10px;
   position: absolute;
   top: 57%;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.banner button:hover{
+  transition: .1s;
+  transform: scale(1.10);
 }
 
 
@@ -107,6 +114,7 @@ header {
   border-radius: 10px;
   min-height: 250px;
   transition: .5s;
+  cursor: pointer;
 }
 
 .banner-main:hover{
@@ -129,6 +137,7 @@ header {
   border-radius: 10px;
   height: 170px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .banner-side div:nth-child(1) {
@@ -182,18 +191,25 @@ transition: .2s;
     width: auto;
     height: 50px;
   }
-
-   .btns-desplazamiento div{
+  
+  .btns-desplazamiento div{
     background-color:#A17C8A;
     width: 50px;
     height: 25px;
     border-radius: 5px;
+    cursor: pointer;
   }
-
-    .btns-desplazamiento div:nth-child(4){
-      background-color: #637184;
-    }
-
+  
+  
+  .btns-desplazamiento div:nth-child(4){
+    background-color: #637184;
+  }
+  .btns-desplazamiento div:hover{
+    background-color: #a17c8a85;
+     transition: .2s;
+     transform: scale(1.10)
+  }
+  
 
 /* Grid de juegos */
 .games {
@@ -209,9 +225,17 @@ transition: .2s;
   text-align: center;
   padding-bottom: 10px;
 }
+
+
 .game-card img {
   width: 100%;
   display: block;
+  transition: .2s;
+}
+.game-card img:hover{
+  transition: .2s;
+  filter: brightness(80%);
+  transform: scale(1.05);
 }
 .game-card p {
   margin-top: 8px;
@@ -239,28 +263,23 @@ transition: .2s;
   gap: 10px;
 }
 
-.footer-top div:nth-child(1) {
-  background: url(/images/descarga.png);
-   background-size: cover;
-  background-repeat: no-repeat;
-  width: 90px;
-  height: 90px;
+.footer-top div p{
+  font-size: 30px;
+  font-weight: 900;
+  margin-right: 160px;
 }
 
-.footer-top div:nth-child(2) {
-  background: url(/images/seguro.png);
-   background-size: cover;
-  background-repeat: no-repeat;
-  width: 90px;
-  height: 90px;
-}
-
+.footer-top div:nth-child(1),
+.footer-top div:nth-child(2),
 .footer-top div:nth-child(3) {
-  background: url(/images/contacto.png);
-  background-size: cover;
+   background-size: cover;
   background-repeat: no-repeat;
   width: 90px;
   height: 90px;
+}
+
+.footer-top div img {
+  background-repeat: no-repeat;
 }
 
 
