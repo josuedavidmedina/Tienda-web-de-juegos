@@ -64,4 +64,67 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-});
+
+            const searchInput = document.querySelector('.search input');
+
+            const gameCards = document.querySelectorAll('.game-card');
+
+            const noGamesMessage = document.getElementById('no-games-message');
+
+        
+
+            searchInput.addEventListener('input', (e) => {
+
+                const searchTerm = e.target.value.toLowerCase();
+
+                let gamesFound = false;
+
+        
+
+                gameCards.forEach(card => {
+
+                    const gameTitle = card.querySelector('p').textContent.toLowerCase();
+
+                    if (gameTitle.includes(searchTerm)) {
+
+                        card.style.display = 'block';
+
+                        gamesFound = true;
+
+                    } else {
+
+                        card.style.display = 'none';
+
+                    }
+
+                });
+
+        
+
+                if (gamesFound) {
+
+                    noGamesMessage.style.display = 'none';
+
+                } else {
+
+                    noGamesMessage.style.display = 'block';
+
+                }
+
+            });
+
+        
+
+            const hamburger = document.querySelector('.hamburger');
+
+            const aside = document.querySelector('aside');
+
+        
+
+            hamburger.addEventListener('click', () => {
+
+                aside.classList.toggle('open');
+
+            });
+
+        });
