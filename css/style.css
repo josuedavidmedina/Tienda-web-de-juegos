@@ -35,6 +35,12 @@ aside ul li {
   cursor: pointer;
   font-weight: bold;
 }
+
+aside ul li a {
+
+  text-decoration: none;
+  color: white;
+}
 aside ul li:hover {
   background: #0d4476;
   border-radius: 5px;
@@ -126,6 +132,17 @@ header {
   transform: scale(1.05);
 }
 
+
+.banner-side div{
+  background-size: cover;
+   background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 170px;
+  padding: 10px;
+  cursor: pointer;
+  width: 350px;
+}
+
 .banner-side div:nth-child(1) h4,
 .banner-side div:nth-child(2) h4,
 .banner-side div:nth-child(3) h4 {
@@ -141,6 +158,23 @@ header {
 .banner-side div:nth-child(3):hover h4{
   opacity: 1;
   transition: .2s;
+}
+
+.banner-side div:nth-child(1) {
+  background-image:url(../images/banner1.png);
+
+}
+
+
+.banner-side div:nth-child(2) {
+  background-image:url(../images/banne2.png);
+
+}
+
+
+.banner-side div:nth-child(3) {
+  background-image:url(../images/banner3.png);
+
 }
 
 /* botones de desplazamiento */

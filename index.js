@@ -106,4 +106,17 @@ document.addEventListener("DOMContentLoaded", () => {
   hamburger.addEventListener("click", () => {
     aside.classList.toggle("open");
   });
+
+  const inicioBtn = document.getElementById("inicio-btn");
+  if (inicioBtn) {
+    inicioBtn.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  }
+
+  document.addEventListener("click", (event) => {
+    if (!aside.contains(event.target) && !hamburger.contains(event.target)) {
+      aside.classList.remove("open");
+    }
+  });
 });
