@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Juego</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vistaJuego.css">
+</head>
+<body>
+        <aside>
+          <h2>Menú</h2>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>Recientes</li>
+            <li>Nuevos</li>
+            <li>De moda</li>
+            <li>Actualizados</li>
+            <li>Multiplayer</li>
+          </ul>
+          <h2>Categorías</h2>
+          <ul>
+            <li>Acción</li>
+            <li>Aventuras</li>
+            <li>Deportes</li>
+            <li>FPS</li>
+            <li>Fútbol</li>
+          </ul>
+        </aside>
+    
+        <main>
+          <header>
+            <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="logo">
+              <img src="./images/pixelplox.png" alt="">
+            </div>
+            <div class="icons">👤 💙 🛒</div>
+          </header>
+        <section class="game-details">
+            <div class="game-header">
+                <h1 id="game-title"></h1>
+            </div>
+            <div class="game-content">
+                <div class="game-media">
+                    <img id="game-image" src="" alt="Imagen del juego">
+                </div>
+                <div class="game-info">
+                    <h2>Descripción</h2>
+                    <p id="game-description"></p>
+                    <div class="purchase-options">
+                        <h2>Opciones de Compra</h2>
+                        <div class="option">
+                            <span>Standard Edition</span>
+                            <button class="buy-button">$59.99</button>
+                        </div>
+                        <div class="option">
+                            <span>Deluxe Edition</span>
+                            <button class="buy-button">$79.99</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-games">
+            <h2>Juegos Relacionados</h2>
+            <div class="games">
+                <!-- Game cards for related games will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+              <div class="footer-section">
+                <h3>Descargas</h3>
+                <ul>
+                  <li><a href="#">Windows</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">Linux</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h3>Compañía</h3>
+                <ul>
+                  <li><a href="#">Sobre nosotros</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Carreras</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Estado del servicio</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h3>Social</h3>
+                <div class="social-icons">
+                  <a href="#"><img src="images/iconosRedes/2111463 1.png" alt="Instagram"></a>
+                  <a href="#"><img src="images/iconosRedes/2504903 1.png" alt="Facebook"></a>
+                  <a href="#"><img src="images/iconosRedes/3670051 1.png" alt="Twitter"></a>
+                  <a href="#"><img src="images/iconosRedes/4494487 1.png" alt="Tiktok"></a>
+                  <a href="#"><img src="images/iconosRedes/4494567 1.png" alt="Youtube"></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2025 PixelPlox. Todos los derechos reservados.</p>
+              <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+              </ul>
+            </div>
+          </footer>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="vistaJuego.js"></script>
+</body>
+</html>
