@@ -22,14 +22,14 @@ body {
 
 .game-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* Force vertical stacking */
     gap: 40px;
-    align-items: flex-start;
+    align-items: center; /* Center items when stacked */
 }
 
 .game-media {
-    flex: 1;
-    min-width: 350px;
+    width: 100%; /* Take full width when stacked */
+    max-width: 600px; /* Limit image width for better aesthetics */
 }
 
 .game-media img {
@@ -39,8 +39,8 @@ body {
 }
 
 .game-info {
-    flex: 1.5;
-    min-width: 350px;
+    width: 100%; /* Take full width when stacked */
+    max-width: 800px; /* Limit info width for better aesthetics */
 }
 
 .game-info h2 {

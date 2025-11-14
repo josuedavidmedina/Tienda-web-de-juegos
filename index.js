@@ -62,15 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const searchInput = document.querySelector(".search input");
 
-  const gameCards = document.querySelectorAll(".game-card");
+  const gameContainers = document.querySelectorAll(".game-container");
 
   const noGamesMessage = document.getElementById("no-games-message");
 
-  gameCards.forEach(card => {
-    card.addEventListener('click', () => {
-        const gameTitle = card.querySelector('p').textContent;
-        const gameImage = card.querySelector('img').src;
-        const gameDescription = "Esta es una descripción de ejemplo para el juego. Aquí se mostrarán más detalles sobre la jugabilidad, la historia y las características del juego.";
+  gameContainers.forEach(container => {
+    container.addEventListener('click', () => {
+        const gameTitle = container.dataset.title;
+        const gameImage = container.dataset.image;
+        const gameDescription = container.dataset.description;
         window.location.href = `vistaJuego.html?title=${encodeURIComponent(gameTitle)}&image=${encodeURIComponent(gameImage)}&description=${encodeURIComponent(gameDescription)}`;
     });
   });
@@ -80,15 +80,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let gamesFound = false;
 
-    gameCards.forEach((card) => {
-      const gameTitle = card.querySelector("p").textContent.toLowerCase();
+    gameContainers.forEach((container) => {
+      const gameTitle = container.dataset.title.toLowerCase();
 
       if (gameTitle.includes(searchTerm)) {
-        card.style.display = "block";
+        container.style.display = "block";
         gamesFound = true;
   
     } else {
-        card.style.display = "none";
+        container.style.display = "none";
       }
     });
 

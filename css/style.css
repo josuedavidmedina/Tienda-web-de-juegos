@@ -119,31 +119,13 @@ header {
   cursor: pointer;
 }
 
-.banner-main:hover{
+.banner-main:hover,
+.banner-side div:hover {
   transition: .2s;
-  filter: brightness(50%);
+  filter: brightness(80%);
+  transform: scale(1.05);
 }
 
-.banner-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.banner-side div{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 10px;
-  height: 170px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.banner-side div:nth-child(1) {
-  background-image:url(../images/banner1.png);
-}
 .banner-side div:nth-child(1) h4,
 .banner-side div:nth-child(2) h4,
 .banner-side div:nth-child(3) h4 {
@@ -159,21 +141,6 @@ header {
 .banner-side div:nth-child(3):hover h4{
   opacity: 1;
   transition: .2s;
-}
-
-.banner-side div:nth-child(2) {
-  background-image:url(../images/banne2.png);
-}
-
-.banner-side div:nth-child(3) {
-  background-image:url(../images/banner3.png);
-}
-.banner-side div:nth-child(1):hover,
-.banner-side div:nth-child(2):hover,
-.banner-side div:nth-child(3):hover{
-  transition: .2s;
-  filter: brightness(50%);
-  transform: scale(1.05);
 }
 
 /* botones de desplazamiento */
